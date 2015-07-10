@@ -41,7 +41,26 @@ server {
 }
 ```
 
+## Python Virtual Environment
+
+Start by installing the **virtualenv** and **pip**:
+```sh
+apt-get install virtualenvwrapper python-pip
+```
+
+I think pip version is washed out:
+```sh
+pip install --upgrade pip
+```
+
+There is a little problem occurred because python version is [old]:
+```sh
+apt-get install python-dev libffi-dev libssl-dev
+pip install ndg-httpsclient
+```
+
 [RASPBIAN]:https://www.raspberrypi.org/downloads/
 [Raspberry Pi 2]:https://www.raspberrypi.org/products/raspberry-pi-2-model-b/
 [1]:http://nginx.org/en/linux_packages.html
+[old]:http://stackoverflow.com/questions/29099404/ssl-insecureplatform-error-when-using-requests-package
 
